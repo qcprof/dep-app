@@ -1,23 +1,29 @@
 export default function Home() {
   return (
     <>
-      <h1 className="text-5xl font-bold text-center text-red-700 mt-10">
-        Depreciation Calculator
-      </h1>
-      <p className="text-lg text-black text-left mt-5 ml-10">
-        This site will help you calculate depreciation expense using the
-        following methods.
-      </p>
-      <ol className="list-decimal list-inside bg-zinc-700 p-5  rounded-lg max-w-md ml-10">
-        <li className=" text-zinc-200 mb-1">Straight Line Depreciation</li>
-        <li className=" text-zinc-200 mb-1">
-          Sum of the Years Method Depreciation
-        </li>
-        <li className=" text-zinc-200 mb-1">
-          Double Declining Balance Depreciation
-        </li>
-        <li className=" text-zinc-200">Units of Production Depreciation</li>
-      </ol>
+      <div className="bg-black min-h-screen p-8">
+        <h1 className="text-4xl font-bold text-yellow-500 mb-6">
+          Depreciation Calculator
+        </h1>
+        <p className="text-yellow-300 text-lg mb-8">
+          This site will help you calculate depreciation expense using the
+          following methods.
+        </p>
+        <ol className="list-decimal list-inside space-y-4 text-yellow-200">
+          <li className="bg-yellow-500/10 p-3 rounded-lg">
+            Straight Line Depreciation
+          </li>
+          <li className="bg-yellow-500/10 p-3 rounded-lg">
+            Sum of the Years Method Depreciation
+          </li>
+          <li className="bg-yellow-500/10 p-3 rounded-lg">
+            Double Declining Balance Depreciation
+          </li>
+          <li className="bg-yellow-500/10 p-3 rounded-lg">
+            Units of Production Depreciation
+          </li>
+        </ol>
+      </div>
     </>
   );
 }
